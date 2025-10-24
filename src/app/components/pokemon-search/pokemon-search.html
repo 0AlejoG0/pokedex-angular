@@ -1,0 +1,23 @@
+<div class="pokedex-container">
+  <h1 class="title">Pokédex</h1>
+
+  <div class="search-box">
+    <input
+      type="text"
+      placeholder="🔍 Escribe nombre o número (ej: pikachu o 25)"
+      [(ngModel)]="searchTerm"
+    />
+    <button (click)="onSearch()">Buscar</button>
+    <button class="clear" (click)="clear()">✖</button>
+  </div>
+
+  <div class="status">
+    <p *ngIf="loading" class="loading">Buscando Pokémon...</p>
+    <p *ngIf="error" class="error">{{ error }}</p>
+    <p *ngIf="!pokemon && !error && !loading" class="hint">Busca un Pokémon para ver su ficha</p>
+  </div>
+
+  <div *ngIf="pokemon" class="card-container">
+    <app-pokemon-card *ngIf="pokemon" [pokemon]="pokemon"></app-pokemon-card>
+  </div>
+</div>

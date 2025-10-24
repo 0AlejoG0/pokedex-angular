@@ -1,0 +1,93 @@
+.pokedex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f4f8, #000000);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  padding: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #e63946;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    width: 250px;
+  }
+
+  button {
+    background: #457b9d;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: #1d3557;
+    }
+
+    &.clear {
+      background: #e63946;
+
+      &:hover {
+        background: #a4161a;
+      }
+    }
+  }
+}
+
+.status {
+  margin-top: 1.5rem;
+  text-align: center;
+
+  .loading {
+    color: #457b9d;
+    font-weight: 600;
+  }
+
+  .error {
+    color: #e63946;
+    font-weight: 600;
+  }
+
+  .hint {
+    color: #555;
+    font-style: italic;
+  }
+}
+
+.card-container {
+  margin-top: 2rem;
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
