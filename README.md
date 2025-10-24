@@ -1,59 +1,23 @@
-# PokemonApp
+# Pokédex Angular ⚡
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.6.
+Proyecto realizado en **Angular + TypeScript + SCSS**, como práctica para consumir la **PokéAPI** y mostrar información detallada de los Pokémon.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🧠 Descripción
 
-```bash
-ng serve
-```
+La aplicación permite:
+- Buscar un Pokémon por **nombre o número en la Pokédex**.
+- Mostrar su **imagen oficial**, **tipo**, **peso**, **altura** y **habilidades**.
+- Mantiene una interfaz limpia y moderna usando **SCSS**.
+- Consume datos en tiempo real desde la **PokéAPI**.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🧩 Tecnologías usadas
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- [Angular 20](https://angular.dev/)
+- TypeScript
+- SCSS
+- HTML5
+- PokéAPI → [https://pokeapi.co](https://pokeapi.co)
